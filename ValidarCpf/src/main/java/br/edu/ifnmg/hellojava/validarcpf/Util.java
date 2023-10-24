@@ -30,13 +30,13 @@ public class Util {
     }
     
     public static boolean validarCpf(long cpf){
-        long aux = cpf;
-        int i;
-        for (i = 0; aux%10 != (aux%100)/10 || i < 10; i++) {
-            aux/=10;
-        }
-        if(i==11)
-            return false;
+//        long aux = cpf;
+//        int i;
+//        for (i = 0; aux%10 != (aux%100)/10 || i < 10; i++) {
+//            aux/=10;
+//        }
+//        if(i==11)
+//            return false;
         return obterDigito(cpf/100, 2) == cpf%10 && Util.obterDigito(cpf/100, 1) == (cpf%100)/10;
     }
     
