@@ -30,7 +30,6 @@ public class Util {
     }
     
     public static boolean validarCpf(long cpf){
-        
         return obterDigito(cpf/100, 2) == cpf%10 && Util.obterDigito(cpf/100, 1) == (cpf%100)/10;
     }
     
@@ -45,5 +44,4 @@ public class Util {
         }
         return validarCpf(lcpf);
     }
-    
 }
